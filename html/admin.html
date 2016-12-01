@@ -3,15 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script src="../js/LAB.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/static.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<input type="button" value="ddddd" onclick="alert(11);"/>
 		
-		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script type="text/javascript">
-			alert("fff");
+			$LAB.script("../js/index.js").wait(function(){
+				alert(222);
+			});
 		</script>
 	</body>
 </html>
