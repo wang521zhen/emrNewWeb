@@ -1,0 +1,94 @@
+body {
+	background-image: url(../images/login/login.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.login_container {
+	margin: 15% auto;
+	background-color: white;
+	width: 25%;
+	box-shadow: 5px 5px 5px gray;
+}
+
+.login_header {
+	border-bottom: 1px solid grey;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.login_content {}
+
+.login_bottom {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+.login_header>span {
+	font-size: 20px;
+	color: darkgray;
+}
+
+#form_login div {
+	position: relative;
+	list-style-type: none;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#form_login div:hover {
+	background-color: gainsboro;
+}
+
+#form_login div:hover span {
+	background-color: #3370CC;
+}
+
+#form_login div span {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 5px;
+}
+
+#form_login div input {
+	width: 75%;
+	height: 45%;
+	margin-top: 10px;
+	clear: both;
+	opacity: 0.4;
+}
+
+.login_button {
+	display: inline-block;
+	padding: 10px 100px;
+	border: none;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+	background-color: #33CC8F;
+	color: white;
+	font-weight: 600;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.login_button:hover {
+	background-color: #44BBA3;
+}
+
+img {
+	width: 25px;
+	height: 25px;
+	clear: both;
+	vertical-align: middle;
+}
