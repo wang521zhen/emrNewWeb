@@ -1,79 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-	</head>
-	<style type="text/css">
-		body{
-			height: 100%;
-			width: 100%;
-			background-color: blanchedalmond;
-			padding: 0px;
-			border: 1px solid brown;
-			margin: 0px;
-			box-sizing: border-box;
-		}
-		.container{
-			height: 100%;
-			width: 100%;
-			border: 1px solid black;
-			box-sizing: border-box;
-			margin: 0px;
-		}
-		.header{
-			background-color: red;
-			height: 50px;
-			width: 100%;
-			margin-top: 0px;
-			box-sizing: border-box;
-		}
-		.menu{
-			background-color: aliceblue;
-			position: absolute;
-			top: 55px;
-			left: 0px;
-			bottom: 0px;
-			width: 15%;
-		}
-		.content{
-			background-color: yellowgreen;
-			position: absolute;
-			top: 55px;
-			right: 0px;
-			bottom: 0px;
-			width: 85%;
-			box-sizing: border-box;
-			margin: 0px;
-		}
-		ul a{
-			font-size: 50px;
-			text-decoration: none;
-			transition-duration: 1s;
-		}
-		a:hover{
-			text-decoration: underline;
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<style type="text/css">
+			body {
+				background-color: gray;
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+			}
 			
-			color: red;
-		}
-	</style>
+			.container {
+				height: 100%;
+				width: 100%;
+				box-sizing: border-box;
+				margin: 0px;
+			}
+			
+			.header {
+				background-color: #4DB3B3;
+				height: 50px;
+				width: 100%;
+				margin: 0px;
+				box-sizing: border-box;
+			}
+			
+			.menu {
+				background-color: aliceblue;
+				position: absolute;
+				top: 52px;
+				left: 0px;
+				bottom: 0px;
+				width: 15%;
+				box-sizing: border-box;
+			}
+			
+			.content {
+				background-color: white;
+				position: absolute;
+				top: 52px;
+				right: 0px;
+				bottom: 0px;
+				width: 85%;
+				box-sizing: border-box;
+				margin: 0px;
+			}
+			
+			.menu>ul {
+				width: 100%;
+				clear: both;
+				position: relative;
+				margin: 0px;
+				border: none;
+				padding: 0px;
+				background-color: #D0EBEB;
+			}
+			li{
+				list-style-type: none;
+			}
+			.menu>ul>li {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			
+			.menu>ul>li>a>i {
+				width: 20%;
+				height: : ;
+				;
+				display: inline-block;
+			}
+			
+			.menu>ul>li>a {
+				width: 65%;
+				text-decoration: none;
+				transition-duration: 1s;
+				line-height: 50px;
+				display: inline-block;
+			}
+			
+			.submenu {
+				display: none;
+			}
+			.submenu li{
+				border: 1px dashed red;
+			}
+			li:hover {
+				background-color: white;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+				color: red;
+			}
+			
+			.content iframe {
+				clear: both;
+				width: 100%;
+				height: 99.7%;
+				box-sizing: border-box;
+				margin: 0px;
+			}
+		</style>
+	</head>
+
 	<body>
 		<div class="container">
 			<div class="header">
+
 			</div>
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="#">dd</a>
+						<a href="#">
+							<i class="">11</i> dd
+						</a>
 					</li>
-					<li>fff</li>
-					<li>fff</li>
+					<li>
+						<a href="#">
+							<i class="">11</i> dd
+						</a>
+					</li>
+					<li>
+						<a href="#" class="submenu-a">
+							<i class="">11</i> dd
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="#">
+									<i></i> fff
+								</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="content">
-				<iframe src="login.html" width="99.5%" height="99%"></iframe>
+				<iframe src="html/admin.html"></iframe>
 			</div>
 		</div>
-		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/LAB.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="UTF-8">
+			
+			$LAB.script("js/public.js").wait(function(){
+				$(".submenu-a").on("click", function() {
+					$(this).next().css("display", "block");
+				});
+			});
+			
+		</script>
 	</body>
+
 </html>
